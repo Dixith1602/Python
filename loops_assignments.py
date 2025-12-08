@@ -1,1 +1,9 @@
+#Question 1: Write an if statement to check if a number is positive.
+
+n = int(input("Enter the number: "))
+
+if n >= 0:
+    print(f"the {n} is positive")
+else:
+    print(f"the {n} is Negative")
 
