@@ -78,3 +78,13 @@ if words.endswith(".txt"):
     print("It is")
 else:
     print("No it is not")
+
+#Question 10: Use if to check if two numbers are equal.
+
+a = int(input("Enter the number: "))
+b = int(input("Enter the number: "))
+
+if a == b:
+    print("Both are same")
+else:
+    print("No they aren't")
