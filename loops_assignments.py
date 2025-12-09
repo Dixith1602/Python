@@ -69,3 +69,12 @@ if len(a) >= 5:
     print("The list have min of 5 elements")
 else:
     print("It has not more than 5 elements")
+
+#Question 9: Write an if statement to check if a file name ends with .txt.
+
+words = "Please.txt"
+
+if words.endswith(".txt"):
+    print("It is")
+else:
+    print("No it is not")
