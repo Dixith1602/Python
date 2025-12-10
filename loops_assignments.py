@@ -254,3 +254,96 @@ if "@" in email:
 else:
     print("Not exist")
 
+#Question 29: Check if age is above 60 and print "Senior Citizen".
+
+age = int(input("Enter the age: "))
+
+if age > 60:
+    print("Senior citizen")
+else:
+    print("Nah")
+
+#Question 30: Use if to check if number is negative or zero.
+
+number = float(input("Enter the number: "))
+
+if number >= 0:
+    print("Positive")
+else:
+    print("Negative")
+
+#Question 31: Check if a number is between 50 and 100.
+
+number = float(input("Enter the number: "))
+
+if number >= 50 and number <= 100:
+    print("The number is inbetween 50 to 100")
+
+else:
+    print("No it is not")
+
+#Question 32: Check if a string contains only digits.
+
+text = input("Enter the word: ")
+
+if text.isnumeric():
+    print("Yes contains only numbers")
+else:
+    print("No it also contains other elements too")
+
+#Question 33: Check if a list is sorted in ascending order.
+
+my_list = [1,2,3,4,5,6,7]
+
+if my_list == sorted(my_list):
+    print("It is sorted")
+else:
+    print("Not sorted")
+
+#Question 34: Check if a number is a perfect square.
+
+number = float(input("Enter the number: "))
+
+num = number ** 0.5
+
+if number % num == 0:
+    print("Yes it is a perfect square number")
+else:
+    print("No it is not a perfect square")
+
+#Question 35: Check if a year is a century year.
+
+year = int(input("Enter the year: "))
+
+if year % 100 == 0:
+    print("It is a century year")
+else:
+    print("No it is not")
+
+#Question 36: Check if a number is Armstrong number.
+
+num = int(input("Enter the number: "))
+num_str= str(num)
+num_len= len(num_str)
+num_digit = sum(int(digit) ** num_len for digit in num_str)
+
+if num_digit == num:
+    print(f"The {num} is armstrong number")
+
+#Question 37: Check if a number is Harshad number.
+
+num = int(input("Enter the number: "))
+num_str = str(num)
+output_num = sum(int(digit) for digit in num_str)
+
+if num % output_num == 0:
+    print("It is a harshad number")
+else:
+    print("It is not a Harshad number")
+
+#Question 38: Check if student score >= 90 (Grade A).
+
+marks = int(input("Enter the marks: "))
+
+if marks >= 90 and marks <=100:
+    print("Grade A")
