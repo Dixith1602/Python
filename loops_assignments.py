@@ -110,3 +110,22 @@ if c > 50:
 else:
     print("Not greater than 50")
 
+#Question 13: Check if the first character of a string is uppercase.
+
+word = str(input("Enter the word: "))
+
+first_Letter = word[0]
+
+if first_Letter.isupper():
+    print("Yea the first letter is upper")
+else:
+    print("No, the first letter is not upper")
+
+#Question 14: Check if temperature is below freezing (0°C).
+
+temperature = float(input("Enter the temperature: "))
+
+if temperature < 0:
+    print("The temperature is below freezing point")
+else:
+    print("No it is not below freezing point")
