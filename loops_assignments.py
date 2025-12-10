@@ -88,3 +88,25 @@ if a == b:
     print("Both are same")
 else:
     print("No they aren't")
+
+#Question 11: Check if a dictionary contains a key "name".
+
+my_dict = {"name": "Alice", "age": 25}
+
+if "name" in my_dict:
+    print("Key 'name' exists.")
+else:
+    print("Key 'name' does not exist.")
+
+#Question 12: Check if the sum of two numbers is greater than 50.
+
+a = int(input("Enter the number: "))
+b = int(input("Enter the number: "))
+
+c = a + b
+
+if c > 50:
+    print("The sum is greater than 50")
+else:
+    print("Not greater than 50")
+
