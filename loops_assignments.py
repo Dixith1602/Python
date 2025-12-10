@@ -215,3 +215,42 @@ if sorted(a.lower()) == sorted(b.lower()):
 else:
     print("Not anagrams")
 
+#Question 24: Use if to check if a set is subset of another.
+
+set_1 = {1, 2, 3}
+set_2 = {1, 2, 3, 4, 5}
+
+if set_1.issubset(set_2):
+    print("set_1 is a subset of set_2.")
+else:
+    print("set_1 is not a subset of set_2.")
+
+#Question 26: Use if to check if given number is palindrome.
+
+word = input("Enter the word: ")
+
+if word[::1] == word[::-1]:
+    print("The word is palindrome")
+else:
+    print("Not a palindrome")
+
+#Question 27: Write if to check if file exists on disk.
+
+import os
+
+file_path = "example.txt"
+
+if os.path.exists(file_path):
+    print("File exists.")
+else:
+    print("File does not exist.")
+
+#Question 28: Check if email contains "@".
+
+email = input("Enter the email: ")
+
+if "@" in email:
+    print("There is @ in email id")
+else:
+    print("Not exist")
+
