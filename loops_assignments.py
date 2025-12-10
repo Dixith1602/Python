@@ -361,3 +361,11 @@ marks = int(input("Enter the marks: "))
 
 if marks <= 50:
     print("Grade C")
+
+#Question 40: Check if score >= 50 (Grade C).
+
+marks = int(input("Enter the marks: "))
+
+if marks <= 50:
+    print("Grade C")
+
