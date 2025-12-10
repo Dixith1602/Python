@@ -129,3 +129,89 @@ if temperature < 0:
     print("The temperature is below freezing point")
 else:
     print("No it is not below freezing point")
+
+#Question 15: Use if to check if a number is prime.
+
+number = int(input("Enter the number: "))
+
+if number > 1:
+    for i in range(2,number):
+        if number % i == 0:
+            print("Not a prime number")
+            break
+    else:
+        print("It is a prime number")
+else:
+    print("It is not a prime number")
+
+#Question 16: Use if to check if marks are >= 90 and print "Grade A".
+
+marks = int(input("Enter the marks: "))
+
+if marks >= 90:
+    print("Grade A")
+
+#Question 17: Use if to check if password length is less than 8.
+
+password = input("Enter the password: ")
+
+if len(password) > 8:
+    print("Password length is greater than 8")
+else:
+    print("Password length is not greater than 8")
+
+#Question 18: Check if a tuple is empty.
+
+tupel = ()
+
+if tupel == ():
+    print("Tuple is empty")
+else:
+    print("The tuple is not empty")
+
+#Question 19: Check if a list contains duplicates.
+
+list_a = [1, 2 ,3 , 4, 5]
+
+if len(list_a) != len(set(list_a)):
+    print("The list has duplicate values")
+else:
+    print("The list doesnt have duplicates")
+
+#Question 20: Use if to check if string contains substring "Python".
+
+text = "I love Python programming"
+
+if "Python" in text:
+    print("Substring found")
+else:
+    print("Substring not found")
+
+#Question 21: Check if user input is numeric.
+
+text = input("enter something: ")
+
+if text.isnumeric():
+    print("True")
+else:
+    print("Not number")
+
+#Question 22: Write if to check if number is multiple of both 3 and 5.
+
+number = int(input("Enter the number: "))
+
+if number % 3 == 0 and number % 5 == 0:
+    print("The number is divisible be 3 and 5")
+else:
+    print("The number is not divisible by 3 and 5")
+
+#Question 23: Check if two strings are anagrams.
+
+a = str(input("Enter the word: "))
+b = str(input("Enter the word: "))
+
+if sorted(a.lower()) == sorted(b.lower()):
+    print("It is anagram")
+else:
+    print("Not anagrams")
+
