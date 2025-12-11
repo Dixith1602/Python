@@ -376,3 +376,34 @@ marks = int(input("Enter the marks: "))
 if marks >= 35:
     print("Pass")
 
+#Question 43: Print "Perfect number" if sum of divisors = number.
+
+num = int(input("Enter the number: "))
+word = 0
+
+for i in range(1, num):
+    if num % i == 0:
+        word += i
+if word == num:
+    print("Perfect number")
+else:
+    print("Not a perfect number")
+
+#Question 44: Check if username length between 5 and 15.
+
+user_name = input("Enter your username: ")
+
+if len(user_name) >= 5 and len(user_name) <= 15:
+    print("Perfect")
+else:
+    print("Not perfect")
+
+#Question 45: Print "Strong PIN" if PIN has exactly 4 digits.
+
+pin_card = input("Enter the card nnumber: ")
+length_pin = len(pin_card)
+if length_pin == 4:
+    print("Strong PIN")
+else:
+    print("Not enough")
+
