@@ -473,3 +473,126 @@ if ' ' in word:
 else:
     print("No it doesn't have spaces")
 
+#Question 54: Print "Uppercase only" if all characters are uppercase.
+
+word = input("Enter the text: ")
+
+if word == word.isupper():
+    print("All upper")
+else:
+    print("No it doesnt contain all upper")
+
+#Question 55: Print "Lowercase only" if all characters are lowercase.
+
+word = input("Enter the text: ")
+
+if word == word.islower():
+    print("All lower")
+else:
+    print("No it doesnt contain all lower")
+
+#Question 56: Print "Alphanumeric" if string has letters and digits.
+
+word = input("Enter the text: ")
+
+if word.isalnum():
+    print("Alphanumeric")
+else:
+    print("No it is not Alphanumeric")
+
+#Question 57: Print "Palindrome word" if same backward.
+
+palindrome_word = input("Enter the text: ")
+
+if palindrome_word [::1] == palindrome_word[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+#Question 58: Check if sum of list elements is even.
+
+list_num = [1,2,3,4,5,6,7]
+
+total_list = sum(list_num)
+
+if total_list % 2 == 0:
+    print("Sum is even")
+else:
+    print("sum is Odd")
+
+#Question 59: Print "Sum odd" if sum odd.
+
+list_odd = [1,2,3,4,5,6]
+
+total_odd = sum(list_odd)
+
+if total_odd % 2 != 0:
+    print("Sum is odd")
+else:
+    print("Sum is even")
+
+#Question 60: Print "All positive numbers" if all > 0.
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 9]
+
+if all(num > 0 for num in numbers):
+    print("All are positive")
+else:
+    print("Not all are positive")
+
+#Question 61: Print "Contains negative numbers" if any < 0.
+
+numbers = [1, 2, 3, 4, -5, 6, 7, 9]
+
+if all(num < 0 for num in numbers):
+    print("Contains negative")
+else:
+    print("Not all are Negative")
+
+#Question 62: Check if average > 50.
+
+numbers = [89, 45, 34, 45, 56, 78, 89, 56]
+average_numbers = sum(numbers)/len(numbers)
+
+if average_numbers > 50:
+    print("Above 50 average")
+else:
+    print("Below average")
+
+#Question 63: Print "Average below 50".
+
+numbers = [89, 45, 34, 45, 56, 78, 89, 56]
+average_numbers = sum(numbers)/len(numbers)
+
+if average_numbers < 50:
+    print("Below 50 average")
+else:
+    print("Above 50 average")
+
+#Question 64: Check if number is multiple of 7.
+
+number = int(input("Enter the number: "))
+
+if number % 7 == 0:
+    print("The number is multiple of 7")
+else:
+    print("No it is not")
+
+#Question 65: Check if number is multiple of 11.
+
+number = int(input("Enter the number: "))
+
+if number % 11 == 0:
+    print("The number is multiple of 11")
+else:
+    print("No it is not")
+
+#Question 66: Check if number ends with digit 5.
+
+number = input("Enter the number: ")
+
+if number.endswith("5"):
+    print("Ends with 5")
+else:
+    print("Not ends with 5")
+
