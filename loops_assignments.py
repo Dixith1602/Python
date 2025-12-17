@@ -407,3 +407,69 @@ if length_pin == 4:
 else:
     print("Not enough")
 
+#Question 46: Print "Weak PIN" if PIN < 4 digits.
+
+pin_card = input("Enter the card nnumber: ")
+length_pin = len(pin_card)
+if length_pin < 4:
+    print("Weak PIN")
+else:
+    print("Not enough")
+
+#Question 47: Print "File hidden" if filename starts with ".".
+
+file_name = '.txt'
+
+if file_name.startswith("."):
+    print("File Hidden")
+else:
+    print("File not hidden")
+
+#Question 49: Print "Even length" if string length % 2 == 0.
+
+text = input("Enter the text: ")
+len_text = len(text)
+
+if len_text % 2 == 0:
+    print("Even length")
+else:
+    print("Not an even length")
+
+#Question 50: Print "Odd length" if string length % 2 == 1.
+
+text = input("Enter the text: ")
+len_text = len(text)
+
+if len_text % 2 == 1:
+    print("Odd length")
+else:
+    print("Not an Odd length")
+
+#Question 51: Check if word contains only vowels.
+
+word = input("Enter the text: ")
+vowels = "aeiouAEIOU"
+
+if word in vowels:
+    print("Word is a vowel")
+else:
+    print("Word is not a vowel")
+
+#Question 52: Check if string contains digits.
+
+word = str(input("Enter the word: "))
+
+if word.isdigit():
+    print("Contains Digit")
+else:
+    print("Not having digits")
+
+#Question 53: Check if string contains spaces.
+
+word = input("Enter the text: ")
+
+if ' ' in word:
+    print("The word has space in it")
+else:
+    print("No it doesn't have spaces")
+
