@@ -17,7 +17,7 @@ else:
     print(f"The {n} is odd")
 
 #Question 3: Write an if statement to check if a string is empty.
-
+ 
 a = "Jai"
 
 if a == "" or a == " ":
