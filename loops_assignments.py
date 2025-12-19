@@ -2,7 +2,7 @@
 
 n = int(input("Enter the number: "))
 
-if n >= 0:
+if n >= 0: 
     print(f"the {n} is positive")
 else:
     print(f"the {n} is Negative")
