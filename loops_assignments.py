@@ -596,3 +596,22 @@ if number.endswith("5"):
 else:
     print("Not ends with 5")
 
+#Question 67: Check if number starts with digit 9.
+
+number = input("Enter the number: ")
+
+if number.startswith("9"):
+    print("Starts with 9")
+else:
+    print("Not starts with 9")
+
+# Question 68: Check if number has exactly 3 digits.
+
+number = input("Enter the number: ")
+length_num = len(number)
+
+if length_num == 3:
+    print("It has 3 number")
+else:
+    print("Not a 3 digit number")
+
