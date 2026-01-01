@@ -615,3 +615,74 @@ if length_num == 3:
 else:
     print("Not a 3 digit number")
 
+#Question 69: Check if temperature is above 100 (boiling).
+
+temperature = int(input("Enter the number: "))
+
+if temperature > 100:
+    print("The temperature is in boiling condition")
+else:
+    print("It is under 100 deg celsius")
+
+#Question 70: Check if password contains both letters and numbers.
+
+password = input("Enter the password: ")
+has_letter = False
+has_number = False
+
+for char in password:
+    if char.isalpha():
+        has_letter = True
+    if char.isdigit():
+        has_number = True
+
+if has_number and has_letter:
+    print("Password contains both number and letter")
+else:
+    print("Any one doesnt satisfy the conditions")
+
+#Question 71: Check if email ends with "@gmail.com".
+
+mail_id = input("Enter the mail ID: ")
+
+if mail_id.endswith("@gmail.com"):
+    print("Condition satisfy")
+else:
+    print("Condition not satisfied")
+
+#Question 72: Check if filename starts with "data_".
+
+file_name = input("Enter the File name: ")
+
+if file_name.startswith("data_"):
+    print("Condition satisfy")
+else:
+    print("Condition not satisfied")
+
+#Question 73: Print "JSON file" if filename ends with .json.
+
+file_name = input("Enter the File name: ")
+
+if file_name.endswith(".json"):
+    print("Its a JSON file")
+else:
+    print("It is not a JSON file")
+
+#Question 74: Print "CSV file" if filename ends with .csv.
+
+file_name = input("Enter the File name: ")
+
+if file_name.endswith(".csv"):
+    print("Its a CSV file")
+else:
+    print("It is not a CSV file")
+#Question 75: Check if a number has 3 digits.
+
+numbers = input("Enter the sentence: ")
+len_sentence = len(numbers)
+
+if len_sentence == 3:
+    print("It has 3 digit")
+else:
+    print("It has more or less than 3 digit")
+
