@@ -243,3 +243,45 @@ for i in range(1, 11):
 print(product)
 
 
+#Question 132: Print characters of a string one by one.
+
+text = input("Enter the text: ")
+str_text = str(text)
+
+for i in str_text:
+    print(i)
+
+#Question 133: Reverse a string using for.
+
+text = input("Enter the text: ")
+reversed_text = ""
+
+for i in reversed(text):
+    reversed_text+=i
+
+print(reversed_text)
+
+#Question 134: Count vowels in a string.
+
+text = input("Enter the text: ")
+vowel_count = 0
+vowels = 'aeiouAEIOU'
+
+for char in text:
+    if char in vowels:
+        vowel_count += 1
+
+print(vowel_count)
+
+#Question 135: Count consonants in a string.
+
+
+text = input("Enter the text: ")
+consonants_count = 0
+vowels = 'aeiouAEIOU'
+
+for char in text:
+    if char not in vowels:
+        consonants_count += 1
+
+print(consonants_count)
