@@ -676,6 +676,7 @@ if file_name.endswith(".csv"):
     print("Its a CSV file")
 else:
     print("It is not a CSV file")
+    
 #Question 75: Check if a number has 3 digits.
 
 numbers = input("Enter the sentence: ")
@@ -685,4 +686,73 @@ if len_sentence == 3:
     print("It has 3 digit")
 else:
     print("It has more or less than 3 digit")
+
+#Question 76: Print "Palindrome number" if digits reverse same.
+
+word = input("Enter the text: ")
+
+if word.lower()[::1] == word.lower()[::-1]:
+    print("The word is palindrome")
+else:
+    print("The word is not palindrome")
+
+#Question 77: Check if year is century year.
+
+year = int(input("Enter the year: "))
+
+if year % 100 == 0:
+    print("The year is a century year")
+else:
+    print("No it is not a century year")
+
+#Question 80: Check if today is Saturday or Sunday.
+
+from datetime import datetime
+
+today = datetime.now()
+weekday = today.weekday()
+
+if weekday in (5, 6):
+    print("Its either sat or sunday")
+else:
+    print("Not a weekend")
+
+#Question 81: Print "Working day" if today is Monday–Friday.
+
+from datetime import datetime
+
+today = datetime.now()
+weekday = today.weekday()
+
+if weekday in (0,1,2,3,4):
+    print("Its a weekday")
+else:
+    print("Its a weekend")
+
+#Question 82: Print "Morning" if time < 12.
+
+now = datetime.now()
+hour = now.hour
+
+if hour < 12:
+    print("Its morning")
+else:
+    print("Its not morning")
+
+#Question 83: Print "Afternoon" if time between 12 and 18.
+
+now = datetime.now()
+hour = now.hour
+
+if hour >= 12 and hour < 18:
+    print("Its afternoon")
+else:
+    print("Its not afternoon")
+
+#Question 84: Print "Night" if time >= 18.
+
+if hour >= 18:
+    print("Night")
+else:
+    print("Not night")
 
