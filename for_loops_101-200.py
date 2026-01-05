@@ -285,3 +285,142 @@ for char in text:
         consonants_count += 1
 
 print(consonants_count)
+
+#Question 136: Count digits in a string.
+
+text = input("Enter the text: ")
+count_digits = 0
+digits = '1234567890'
+
+for i in text:
+    if i in digits:
+        count_digits+=1
+print(count_digits)
+
+#Question 137: Count spaces in a string.
+
+text = input("Enter the text: ")
+count_space = 0
+space = " "
+
+for i in text:
+    if i in space:
+        count_space += 1
+print(count_space)
+
+#Question 138: Print list elements one by one.
+
+list_a = [1, 2, 3, 4, 5, 6]
+
+for i in list_a:
+    print(i)
+
+#Question 139: Find sum of all list elements.
+
+list_a = [1, 2, 3, 4, 5, 6]
+sum = 0
+for i in list_a:
+    sum+=i
+    
+print(sum)
+
+#Question 140: Find maximum in a list.
+
+list_a = [1, 2, 3, 4, 5, 6]
+max_value = list_a[0]
+
+for i in list_a:
+    if i > max_value:
+        max_value = i
+print(max_value)
+
+#Question 141: Find minimum in a list.
+
+list_a = [1, 2, 3, 4, 5, 6]
+min_value = list_a[0]
+
+for i in list_a:
+    if i < min_value:
+        min_value = i
+print(min_value)
+
+#Question 142: Print index and value of list.
+
+list_a = [1, 2, 3, 4, 5, 6]
+
+for index, value in enumerate(list_a):
+    print(f"index {index}: {value}")
+
+#Question 143: Print elements at even indexes.
+
+list_a = [1, 2, 3, 4, 5, 6]
+
+for index, value in enumerate(list_a):
+    if index%2==0:
+        print(f"index {index}: {value}")
+
+#Question 144: Print elements at odd indexes.
+
+list_a = [1, 2, 3, 4, 5, 6]
+
+for index, value in enumerate(list_a):
+    if index%2!=0:
+        print(f"index {index}: {value}")
+
+#Question 145: Double every element in list.
+
+list_a = [1, 2, 3, 4, 5, 6]
+
+for i in list_a:
+    print(i+i)
+
+#Question 146: Square every element in list.
+
+list_a = [1, 2, 3, 4, 5, 6]
+
+for i in list_a:
+    print(i**2)
+
+#Question 147: Filter even numbers from list.
+
+list_a = [1, 2, 3, 4, 5, 6]
+
+for index, values in enumerate(list_a):
+    if values % 2 == 0:
+        print(f"index {index}: {values}")
+
+#Question 148: Filter odd numbers from list.
+
+list_a = [1, 2, 3, 4, 5, 6]
+
+for index, values in enumerate(list_a):
+    if values % 2 != 0:
+        print(f"index {index}: {values}")
+
+#Question 149: Print common elements in two lists.
+list_a = [1, 2, 3, 4, 5, 6]
+list_b = [1,3,5,7,9,8]
+common_elements = []
+
+for i in list_a:
+    for j in list_b:
+        if i == j:
+            if i not in common_elements:
+                common_elements.append(i)
+print(common_elements) 
+
+#Question 150: Print unique elements from list.
+
+list_a = [1, 2, 3, 4, 5, 6]
+list_b = [1,3,5,7,9,8]
+non_common = []
+
+for i in list_a:
+    if i not in list_b and i not in non_common:
+        non_common.append(i)
+for i in list_b:
+    if i not in list_a and i not in non_common:
+        non_common.append(i)
+
+print(non_common)
+
