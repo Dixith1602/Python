@@ -424,3 +424,12 @@ for i in list_b:
 
 print(non_common)
 
+#Question 151: Copy list using for loop.
+
+list_a = [1, 2, 3, 4, 5, 6]
+empty_list = []
+
+for i in list_a:
+    empty_list.append(i)
+
+print(empty_list)
