@@ -433,3 +433,225 @@ for i in list_a:
     empty_list.append(i)
 
 print(empty_list)
+
+#Question 151: Copy list using for loop.
+
+list_a = [1, 2, 3, 4, 5, 6]
+empty_list = []
+
+for i in list_a:
+    empty_list.append(i)
+
+print(empty_list)
+
+#Question 153: Print all keys of dictionary.
+
+dct = {"name": "Dikshu", "Age": "29", "City": "Davanagere"}
+
+for key in dct:
+    print(key)
+
+#Question 154: Print all values of dictionary.
+
+dct = {"name": "Dikshu", "Age": "29", "City": "Davanagere"}
+
+for value in dct.values():
+    print(value)
+
+# Question 155: Print all key–value pairs.
+
+dct = {"name": "Dikshu", "Age": "29", "City": "Davanagere"}
+
+for key, value in dct.items():
+    print(f"{key}:{value}")
+
+#Question 156: Count frequency of each character in string.
+
+name = input("Enter the name: ")
+freq = {}
+
+for i in name:
+    freq[i] = freq.get(i, 0) +1
+
+print(freq)
+
+#Question 157: Count frequency of each element in list.
+
+list1 = [1, 2, 3, 3, 2, 4, 4, 1, 5]
+freq = {}
+
+for i in list1:
+    freq[i] = freq.get(i, 0) + 1
+
+print(freq)
+
+#Question 158: Loop through set and print elements.
+
+set1 = {1, 2, 3, 4, 5, 6, 7, 3, 45, 2, 3}
+
+for i in set1:
+    print(i)
+
+#Question 159: Loop through tuple and print.
+
+tuplee = (1, 2, 3, 4, 4, 5, 5, 6, 6)
+
+for i in tuplee:
+    print(i)
+
+#Question 160: Print Fibonacci numbers up to 50.
+
+fibonacci = [0, 1]
+
+for i in range(8):
+    fibonacci.append(fibonacci[-1] + fibonacci[-2])
+
+print(fibonacci)
+
+#Question 161: Print numbers divisible by 3 up to 100.
+num3 = []
+for i in range(1, 101):
+    if i%3==0:
+        num3.append(i)
+print(num3)
+
+#Question 162: Print numbers divisible by 7 up to 100.
+num7 = []
+for i in range(1, 101):
+    if i%7==0:
+        num7.append(i)
+print(num7)
+
+#Question 163: Print prime numbers from 1–50.
+
+for num in range(2, 51):
+    is_prime = True
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print(num, end = ' ')
+
+#Question 164: Print composite numbers 1–50.
+
+for num in range(4, 51):
+    for i in range(2, int(num ** 0.5) +1):
+        if num%i == 0:
+            print(num, end = ' ')
+            break
+
+#Question 167: Print numbers divisible by both 2 and 5.
+
+for i in range(1, 101):
+    if i % 2 == 0 and i % 5 == 0:
+        print(i, end = ' ')
+
+#Question 168: Print numbers divisible by either 2 or 5.
+
+for i in range(1, 101):
+    if i % 2 == 0 or i % 5 == 0:
+        print(i, end = ' ')
+
+#Question 169: Print numbers not divisible by 2 or 3.
+
+for i in range(1, 101):
+    if i % 2 != 0 or i % 3 != 0:
+        print(i, end = ' ')
+
+#Question 173: Print square pattern with stars.
+
+n = 5
+
+for i in range(1, n+1):
+    for j in range(n+1):
+        print("*", end = " ")
+    print()
+
+#Question 179: Print multiplication tables 1 to 10.
+
+for num in range(1, 11):
+    for i in range(1, 11):
+        product=num*i
+        print(f"{num}*{i}={product}")
+    print("*"*50)
+
+#Question 187: Generate list of first 10 squares.
+
+squares = []
+
+for i in range(1, 11):
+    squares.append(i**2)
+print(squares)
+
+#Question 188: Generate list of first 10 cubes.
+
+cubes = []
+
+for i in range(1, 11):
+    cubes.append(i**3)
+print(cubes)
+
+#Question 189: Generate list of even numbers.
+
+even_num = []
+
+for i in range(1, 101):
+    if i%2==0:
+        even_num.append(i)
+print(even_num)
+
+#Question 190: Generate list of odd numbers.
+
+odd_num = []
+for i in range(1, 101):
+    if i%2!=0:
+        odd_num.append(i)
+print(odd_num)
+
+#Question 191: Generate list of prime numbers.
+
+prime_num=[]
+for num in range(2, 101):
+    is_prime = True
+    for i in range(2, int(num**0.5)+1):
+        if num%i==0:
+            is_prime = False
+            break
+    if is_prime:
+        prime_num.append(num)
+
+#Question 194: Reverse list using for.
+
+tuplee = [1, 2, 3, 4, 4, 5, 5, 6, 6]
+new_list = []
+
+for i in reversed(tuplee):
+    new_list.append(i)
+
+print(new_list)
+
+#Question 196: Print characters from ASCII 65–90.
+
+for i in range(65, 91):
+    print(chr(i), end = ' ')
+
+#Question 197: Print characters from ASCII 97–122.
+
+for i in range(97, 123):
+    print(chr(i), end=' ')
+
+#Question 198: Loop over range(5) and print numbers.
+
+for i in range(5):
+    print(i)
+
+#Question 199: Loop over range(2, 20, 2).
+
+for i in range(2, 20, 2):
+    print(i)
+
+#Question 200: Loop backwards using range(10, 0, -1).
+
+for i in range(10, 0, -1):
+    print(i)
